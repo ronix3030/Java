@@ -1,0 +1,8 @@
+MI primer manual
+mkdir--->Crear Directorio
+ls --->Listar Archivos
+touch---->Crear Archivo
+rm R---->Eliminar Archivo
+cat ----> Visualizar Archivo
+history ---> Muestra el historial de comandos
+
