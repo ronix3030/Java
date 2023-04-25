@@ -6,3 +6,11 @@ rm R---->Eliminar Archivo
 cat ----> Visualizar Archivo
 history ---> Muestra el historial de comandos
 
+Comandos GIT
+git status-->muestra el estado de la estacion de trabajo
+git log --> muestra los registros historicos
+git add . ---> añade todo los archivos a la estacion
+git commit -m "primer viaje"---->registra un elemento historico
+git push origin main ---->sube los archivos a la nube
+git pull origin main ---> actualiza los archivos de la estacion
+
