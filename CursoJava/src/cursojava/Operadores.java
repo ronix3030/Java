@@ -41,7 +41,16 @@ public class Operadores {
         System.out.println(true && true);
         System.out.println(true || false);
         System.out.println(f == j && a>b );
-
+        
+ // OPERADORES INCREMENTO Y DECREMENTO
+ // se incrementa despues de la ejecucion
+           int n=5;
+           
+           n++;
+           n++;
+           System.out.println(n);
+           System.out.println(++n);
+           System.out.println(--n);
        
         
         
