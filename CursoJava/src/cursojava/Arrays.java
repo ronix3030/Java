@@ -6,10 +6,7 @@ package cursojava;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author ronald
- */
+
 public class Arrays {
     public static void main(String[] args){
         
