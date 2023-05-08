@@ -12,9 +12,13 @@ public class Funciones {
      public static void main(String[] args){
          
          // Se llama la funcion dentro el metodo main
+         // las variables solo van dentro del metodo main para llamarlas en las funciones
+         
          hola();
          sumar(5, 5);
          nombre("Ronald", 22);
+         
+         System.out.println("La resta es " + rest(50, 10));
     
      }
      
@@ -32,8 +36,19 @@ public class Funciones {
      }
      
      static void nombre(String nombre, int edad){ //PARAMETROS
-         System.out.println("Mi nombre y edad es: "+nombre);
+         System.out.printf("Hola soy %s y mi edad es %d \n",nombre,edad);
+         
+         System.out.println("------Funcion Con Retorno---------");   
+     }
+         //Si queremos que retorne un int o string lo ponemos despues del static
+         static int rest(int a, int x){
+             
+             return a-x;
+             
+         }
+         
+         
          
      }
     
-}
+
