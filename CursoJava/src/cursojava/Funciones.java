@@ -17,8 +17,19 @@ public class Funciones {
          hola();
          sumar(5, 5);
          nombre("Ronald", 22);
+         // Podemos reutilizar la funcion con solo llamarla 
+         // 3 Ejemplos
+         int resta=rest(100, 50);
+         System.out.println("La resta es: "+resta);
+         System.out.println("La resta es " + rest(50, 10)); 
+         String nomb="Roberto";
+         //Llamamos a la Funcion en este caso es nom y se rellena auto el espacio
+         System.out.println(nom(nomb));
+         // Ejemplo de SobreCARGA de funcion
+         // No se puede llamar a la misma funcion y que imprima 2 veces la misma con diferente tipo de dato
+         System.out.println("la suma de enteros es " + sumaDecimal(500, 500));
+         System.out.println("La suma de Decimal es " + sumaDecimal(100.8, 80.5));
          
-         System.out.println("La resta es " + rest(50, 10));
     
      }
      
@@ -43,9 +54,27 @@ public class Funciones {
          //Si queremos que retorne un int o string lo ponemos despues del static
          static int rest(int a, int x){
              
-             return a-x;
+             return a-x; //Tenemos que retornar del mismo tipo en este caso entero
              
          }
+         static String nom( String nomb ){
+           
+             return "Mi nombre es "+nomb;  
+         }
+         
+         static double sumaDecimal(double a, double b){
+               System.out.println("-----------Sobre Carga de Funciones-------"); 
+       // Podemos llamar al misma funcion pero retorna diferente tipo de datos
+       // No se puede crear el mismo nombre con el mismo tipo de dato
+       // Tipo de dato es lo que viene despues del static y antes del parentesis
+             return a+b;
+         }
+       static int sumaDecimal(int a, int b){
+           return a+b;
+       }
+         
+         
+         
          
          
          
