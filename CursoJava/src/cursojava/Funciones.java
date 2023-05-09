@@ -29,7 +29,9 @@ public class Funciones {
          // No se puede llamar a la misma funcion y que imprima 2 veces la misma con diferente tipo de dato
          System.out.println("la suma de enteros es " + sumaDecimal(500, 500));
          System.out.println("La suma de Decimal es " + sumaDecimal(100.8, 80.5));
-         
+         titulo();
+         cuentaRegresiva(20);
+         System.out.println(factorial(5));
     
      }
      
@@ -42,8 +44,7 @@ public class Funciones {
      static void sumar(int a, int b){ // PARAMETROS
          int suma= a+b;
          System.out.println(""+ suma);
-         
-         
+     
      }
      
      static void nombre(String nombre, int edad){ //PARAMETROS
@@ -70,10 +71,35 @@ public class Funciones {
              return a+b;
          }
        static int sumaDecimal(int a, int b){
+           
            return a+b;
+           
        }
+         static void titulo (){      
+             System.out.println( "--------Funciones Recursivas-----");
+         }
+         static void cuentaRegresiva(int numero){ // recibe el numero asignado
+             
+             numero -- ; // Luego Descuenta -1
+             if (numero>0){ // Si se cumple 
+                
+                 System.out.println(numero); // Imprime
+                  cuentaRegresiva(numero); // Se ejecuta denuevo con un numero menos
+                  // Reenvia el numero ya que es un bucle hasta que llege a 0
+             }
+             else {
+                 System.out.println("LLego hasta 0");
+             }
+         }
          
-         
+         static int factorial(int numero){
+             // El factorial de un numero de la multiplicacion de todos los numeros anteriores hasta llegar a uno
+             if (numero >1){
+                 numero = numero * factorial(numero - 1); // aca se multiplica con un numero menos con el asignado
+                 // el resultado se guarda en numero
+             }
+             return numero;
+         }
          
          
          
