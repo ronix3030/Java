@@ -13,6 +13,7 @@ public class Funciones {
          
          // Se llama la funcion dentro el metodo main
          // las variables solo van dentro del metodo main para llamarlas en las funciones
+        
          
          hola();
          sumar(5, 5);
@@ -32,18 +33,21 @@ public class Funciones {
          titulo();
          cuentaRegresiva(20);
          System.out.println(factorial(5));
+         System.out.println("------Parametros Indefinidos Varargs-------");
+         System.out.println("La suma es "+SUMAX("Aca uso String  ",20,20,20,10,5));
     
      }
      
      //Definir la Funcion
      // Static Void solo se ejecutara
+     // Si la Funcion tiene un Return ya no se llama Funcion SINO METODO (Orientado a Objetos)= Reutilizacion del metodo
      static void hola(){
          System.out.println("Hola AMIGOOOO");
      }
      
      static void sumar(int a, int b){ // PARAMETROS
          int suma= a+b;
-         System.out.println(""+ suma);
+         System.out.println("porque aca se ejecuta no era en el main?"+ suma);
      
      }
      
@@ -70,7 +74,7 @@ public class Funciones {
        // Tipo de dato es lo que viene despues del static y antes del parentesis
              return a+b;
          }
-       static int sumaDecimal(int a, int b){
+       static int sumaDecimal(int a, int b){ 
            
            return a+b;
            
@@ -97,11 +101,21 @@ public class Funciones {
              if (numero >1){
                  numero = numero * factorial(numero - 1); // aca se multiplica con un numero menos con el asignado
                  // el resultado se guarda en numero
+                 // asigna el numero de acuerdo a lo multiplicado  se va acumulando
              }
              return numero;
          }
          
-         
+         static int SUMAX( String Letra, int ... Valor){ // Se puede enviar Parametros indefinidos 
+             //APLICAMOS UN for Each digitamos for i mas crtl + espacio 
+             System.out.println(Letra);
+             int suma=0;
+             for (int num: Valor) { // el num va a recuperar los datos del array osea los numeros 
+                 suma+=num; // Usamos operador en asignacion , aqui se va a sumar todos los numeros ingresados
+                 
+             }
+             return suma; // Contiene toda la suma
+         }
          
          
      }
