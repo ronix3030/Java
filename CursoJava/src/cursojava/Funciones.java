@@ -35,6 +35,8 @@ public class Funciones {
          System.out.println(factorial(5));
          System.out.println("------Parametros Indefinidos Varargs-------");
          System.out.println("La suma es "+SUMAX("Aca uso String  ",20,20,20,10,5));
+         System.out.println("--Otro Ejemplo pero con Double --");
+         System.out.println("La suma de decimales es " + Sumax2(10.35,12.5,60.8));
     
      }
      
@@ -108,7 +110,7 @@ public class Funciones {
          
          static int SUMAX( String Letra, int ... Valor){ // Se puede enviar Parametros indefinidos 
              //APLICAMOS UN for Each digitamos for i mas crtl + espacio 
-             System.out.println(Letra);
+             System.out.print(Letra);
              int suma=0;
              for (int num: Valor) { // el num va a recuperar los datos del array osea los numeros 
                  suma+=num; // Usamos operador en asignacion , aqui se va a sumar todos los numeros ingresados
@@ -116,8 +118,17 @@ public class Funciones {
              }
              return suma; // Contiene toda la suma
          }
+             static double Sumax2 (double ... Numbers){
+                 double suma=0;
+                 for (double num: Numbers) {
+                     suma+=num;
+                 }
+                 return suma;
+                 
+             }
+         }
          
          
-     }
+     
     
 
