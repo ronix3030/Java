@@ -24,6 +24,16 @@ public class ClaseMath {
        // El random te bota numero boleano osea en decimales
        int numeroR=(int)(Math.random()*100); // Asi que tienes que convertirlo en Entero
        System.out.println(numeroR);
+       System.out.println("Raiz Cuadrada");
+       System.out.println((int)Math.sqrt(64));
+       System.out.println("Numero Maximo");
+       System.out.println(Math.max(1, 10));
+       System.out.println("Numero Minimo");
+       System.out.println(Math.min(1, 20));
+       System.out.println("Redondeo de numero");
+       System.out.println(Math.round(10.6585));
+     
+       
        
        
        
