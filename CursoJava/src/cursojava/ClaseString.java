@@ -18,8 +18,16 @@ public class ClaseString {
            System.out.println(nombre.charAt(3));  // Muestranos el Indice 3
            System.out.println("Metodo length");
            System.out.println(nombre.length());
-           
-           
+           System.out.println("Metodo toLowerCase");
+           System.out.println(nombre.toLowerCase()); // Convertimos a Minusculas
+           System.out.println("Metodo toUpperCase");
+           System.out.println(nombre.toUpperCase()); // Convertimos  Mayusculas
+           System.out.println("Metodo replace"); // Sirve para reemplazar
+           nombre="H O L A A";
+           System.out.println(nombre.replace("A","a")); // el segundo parametro es al que quiero que cambie 
+           System.out.println("Metodo Equals ");
+           // Sirve para comparar 2 cadenas de caracteres para saber si son iguales o no
+           System.out.println(" Holi".equals("HOLI")); // devuelve un boleano true o false
            
            
        }
